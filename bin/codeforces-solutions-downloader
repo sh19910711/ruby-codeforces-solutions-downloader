@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/codeforces/solutions/downloader'
+
+app = Codeforces::Solutions::Downloader::Application.new
+app.parse_options ARGV
+app.fetch_submissions
